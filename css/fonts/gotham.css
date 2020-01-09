@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham/GothamBook.eot');
+    src: url('Gotham/GothamBook.eot') format('embedded-opentype'),
+    url('Gotham/GothamBook.woff2') format('woff2'),
+    url('Gotham/GothamBook.woff') format('woff'),
+    url('Gotham/GothamBook.ttf') format('truetype'),
+    url('Gotham/GothamBook.svg#GothamBook') format('svg');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham/GothamMedium.eot');
+    src: url('Gotham/GothamMedium.eot') format('embedded-opentype'),
+    url('Gotham/GothamMedium.woff2') format('woff2'),
+    url('Gotham/GothamMedium.woff') format('woff'),
+    url('Gotham/GothamMedium.ttf') format('truetype'),
+    url('Gotham/GothamMedium.svg#GothamMedium') format('svg');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham/GothamBold.eot');
+    src: url('Gotham/GothamBold.eot') format('embedded-opentype'),
+    url('Gotham/GothamBold.woff2') format('woff2'),
+    url('Gotham/GothamBold.woff') format('woff'),
+    url('Gotham/GothamBold.ttf') format('truetype'),
+    url('Gotham/GothamBold.svg#GothamBold') format('svg');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham/GothamBlack.eot');
+    src: url('Gotham/GothamBlack.eot') format('embedded-opentype'),
+    url('Gotham/GothamBlack.woff2') format('woff2'),
+    url('Gotham/GothamBlack.woff') format('woff'),
+    url('Gotham/GothamBlack.ttf') format('truetype'),
+    url('Gotham/GothamBlack.svg#GothamBlack') format('svg');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham/GothamUltra.eot');
+    src: url('Gotham/GothamUltra.eot') format('embedded-opentype'),
+    url('Gotham/GothamUltra.woff2') format('woff2'),
+    url('Gotham/GothamUltra.woff') format('woff'),
+    url('Gotham/GothamUltra.ttf') format('truetype'),
+    url('Gotham/GothamUltra.svg#GothamUltra') format('svg');
+    font-weight: 900;
+}

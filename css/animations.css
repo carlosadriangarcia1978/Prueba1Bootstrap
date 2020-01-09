@@ -1,0 +1,118 @@
+/*<Shine>*/
+    .shine:after{
+        content: "";
+        position: absolute;
+        top: -110%;
+        left: -210%;
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+        transform: rotate(-30deg);
+
+        background: rgba(255, 255, 255, 0.13);
+        background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.13) 0%,
+        rgba(255, 255, 255, 0.13) 77%,
+        rgba(255, 255, 255, 0.5) 92%,
+        rgba(255, 255, 255, 0.0) 100%
+        );
+    }
+    /* Hover state - trigger effect */
+    .shine:hover:after{
+        opacity: 1;
+        top: -30%;
+        left: -30%;
+        transition-property: left, top, opacity;
+        transition-duration: 0.7s, 0.7s, 0.15s;
+        transition-timing-function: ease;
+    }
+    /* Active state */
+    .shine:active:after{ 
+        opacity: 0; 
+    }
+/*</Shine>*/
+/*<Zoom in>*/
+    .zoomin-container{
+        overflow: hidden;
+    }
+    .zoomin{
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .zoomin-container:hover .zoomin{
+        -moz-transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+        transform: scale(1.07);
+    }
+    @media only screen and (max-width: 760px){
+        .bPrincipal{
+            height: 38vw;
+        }
+    }
+/*</Zoom in>*/
+/*<Appear>*/
+    .appear-container{
+    }
+    .appear,.disappear,.partial-disappear{
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+    .appear{ opacity: 0; }
+    .disappear,.partial-disappear{ opacity: 1; }
+    .appear-container:hover .appear, .appear-container.active .appear{ opacity: 1; }
+    .appear-container:hover .disappear, .appear-container.active .disappear{ opacity: 0; }
+    .appear-container:hover .partial-disappear, .appear-container.active .partial-disappear{ opacity: 0.3; }
+    @media only screen and (max-width : 760px) {
+        .appear:not(.appear-only-active){ opacity: 1; }
+        .disappear:not(.disappear-only-active){ opacity: 0; }
+        .partial-disappear:not(.partial-disappear-only-active){ opacity: 0.3; }
+    }
+/*</Appear>*/
+/*<Drop down>*/
+    .dropdown-container .dropdown{
+        overflow: hidden;
+    }
+    .dropdown{
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        max-height: 0;
+    }
+
+    .dropdown-container-hover:hover .dropdown, .dropdown-container.active .dropdown{
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        max-height: 200px;
+    }
+/*</Drop down>*/
+/*<Underline>*/
+    .underline{
+        display: inline-block;
+    }
+    .underline::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #000;
+        transition: width .3s;
+    }
+    .underline:hover::after{
+        width: 100%;
+    }
+    .underline.underlined::after{
+        width: 100%;
+    }
+/*</Underline>*/
