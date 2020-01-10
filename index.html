@@ -200,25 +200,6 @@ document.write('<iframe src="https://8532850.fls.doubleclick.net/activityi;src=8
 <div id="alert" class="alert">Estamos actualizando nuestro catálogo de productos. Estarán disponibles en breve
 <i id="close-popup" class="fa fa-times"></i>
 </div>
-<script>
-    var times = document.getElementById('close-popup');
-    var prod = document.getElementById('click-prod');
-    var alert = document.getElementById('alert');
-    var menu1 = document.getElementById('menu1');
-    var menu2 = document.getElementById('menu2');
-    var menu3 = document.getElementById('menu3');
-    prod.addEventListener("click", function(){
-        menu1.classList.remove('open');
-        menu2.classList.remove('open');
-        menu3.classList.remove('open');
-        alert.classList.add('on');
-        setTimeout(function(){ alert.classList.remove('on'); }, 8000);
-        
-    });
-    times.addEventListener("click", function(){
-        alert.classList.remove('on');
-    });
-</script>
 <div class="container tight">
    <div class="flexslider">
         <ul class="slides">
@@ -276,5 +257,26 @@ document.write('<iframe src="https://8532850.fls.doubleclick.net/activityi;src=8
         <a href="http://iokstudio.com.ar?externalref=lusqtoff" target="_blank" class="iokstudio" style="font-size: 8px; position: absolute; bottom: 3px; right: 3px; display: flex; align-items: flex-end; justify-content: center; text-align: right;"><p>BY</p> &nbsp;<img src="images/logo/IOK.svg" style="height: 20px;" alt="IOKSTUDIO"></a>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"  ></script><script src="js/jquery.flexslider.js"  ></script><script src="js/funciones.js"  ></script>    <script type="text/javascript">console.log("powered by \n _       _        _             _ _       \n(_) ___ | | _____| |_ _   _  __| (_) ___  \n| |/ _ \\| |/ / __| __| | | |/ _` | |/ _ \\ \n| | (_) |   <\\__ \\ |_| |_| | (_| | | (_) |\n|_|\\___/|_|\\_\\___/\\__|\\__,_|\\__,_|_|\\___/ \n\niokstudio.com");</script>
-    </body>
+
+	<script>
+    var times = document.getElementById('close-popup');
+    var prod = document.getElementById('click-prod');
+    var alert = document.getElementById('alert');
+    var menu1 = document.getElementById('menu1');
+    var menu2 = document.getElementById('menu2');
+    var menu3 = document.getElementById('menu3');
+    prod.addEventListener("click", function(){
+        menu1.classList.remove('open');
+        menu2.classList.remove('open');
+        menu3.classList.remove('open');
+        alert.classList.add('on');
+        setTimeout(function(){ alert.classList.remove('on'); }, 8000);
+        
+    });
+    times.addEventListener("click", function(){
+        alert.classList.remove('on');
+    });
+</script>
+	</body>
+
 </html>
